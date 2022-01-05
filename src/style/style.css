@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'yekan';
+    src: url('../font/iranyekanwebregularfanum.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'yekan';
+}
+
+img{
+    width: 400px;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.section-container{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.div-container{
+    flex-basis: 400px;
+}
+
+.input{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 10px;
+}
+
+.input > input{
+    padding: 10px;
+}
+
+.input > input:last-child{
+    cursor: pointer;
+    border-width: 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #c5c5c5;
+    transition: 0.3s ease;
+}
+
+.input > input:last-child:hover{
+    box-shadow: 2px 3px 10px #b6b6b6;
+}
+
+.weth-result{
+    width: inherit;
+    margin-top: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.err{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.show-result{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 400px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #18E0AA;
+}
+
+.icon > i{
+    font-size: 100px;
+}
+
+.text{
+    display: grid;
+    grid-template-rows: repeat(1fr, 4);
+    grid-gap: 20px;
+    align-self: center;
+    text-align: center;
+}
+
+.city-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.temp{
+    display: flex;
+    justify-content: center;
+}
+
+.temp > div{
+    margin: 0 15px;
+    padding: 10px 12px;
+    background-color: #18E0AA;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.min{
+    background-color: #0095ff !important;
+}
+
+.max{
+    background-color: #ff0077 !important;
+}
+
+/* responsive style */
+@media (max-width: 350px) {
+    .input{
+        grid-template-columns: 1fr;
+    }
+}

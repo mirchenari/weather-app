@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>برنامه هواشناسی شهرهای ایران</title>
+    <link rel="shortcut icon" href="image/weather-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <section class="section-container">
+        <div class="div-container">
+            <div class="input">
+                <input type="text" id="input" placeholder="نام شهر..." style="font-size: 16px;">
+                <input type="button" value="نمایش آب و هوا">
+            </div>
+
+            <article class="weth-result">
+                <div class="err hidden"></div>
+                
+                <div class="loading-gif hidden">
+                    <img src="image/loading.gif" alt="در حال بارگذاری...">
+                </div>
+
+                <div class="show-result hidden">
+                    <div class="icon">
+                        <i class=""></i>
+                    </div>
+
+                    <div class="text">
+                        <div class="city-name"></div>
+
+                        <div class="condition"></div>
+
+                        <div class="temp">
+                            <div class="min"></div>
+                            <div class="now"></div>
+                            <div class="max"></div>
+                        </div>
+
+                        <div class="update"></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <link rel="stylesheet" href="../style/weather-icons-master/css/weather-icons.min.css">
+    <script src="../script/script.js"></script>
+</body>
+
+</html>
